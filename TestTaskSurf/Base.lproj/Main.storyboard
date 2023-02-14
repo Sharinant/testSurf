@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestTaskSurf" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="pSX-K6-8w8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="eMg-o1-ceP"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jL0-ca-6lr">
+                                <rect key="frame" x="0.0" y="766" width="414" height="130"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1BT-av-ASw">
+                                        <rect key="frame" x="30" y="46.5" width="118" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="118" id="0Lp-vm-eBv"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Хочешь">
+                                                <attributes>
+                                                    <font key="NSFont" size="14" name="SFProDisplay-Regular"/>
+                                                    <font key="NSOriginalFont" size="17" name="Symbol"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <font key="NSFont" size="14" name="SFProDisplay-Regular"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="к">
+                                                <attributes>
+                                                    <font key="NSFont" size="14" name="SFProDisplay-Regular"/>
+                                                    <font key="NSOriginalFont" size="17" name="Symbol"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <font key="NSFont" size="14" name="SFProDisplay-Regular"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="нам">
+                                                <attributes>
+                                                    <font key="NSFont" size="14" name="SFProDisplay-Regular"/>
+                                                    <font key="NSOriginalFont" size="17" name="Symbol"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="?">
+                                                <attributes>
+                                                    <font key="NSFont" size="14" name="SFProDisplay-Regular"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hH4-QQ-9ge">
+                                        <rect key="frame" x="216" y="25" width="159" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="wBl-7A-SYt"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" cornerStyle="fixed">
+                                            <backgroundConfiguration key="background" cornerRadius="52">
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Отправить заявку">
+                                                    <attributes>
+                                                        <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="joinAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hd8-j5-dP0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="2PK-SO-Uuc"/>
+                                    <constraint firstAttribute="bottom" secondItem="hH4-QQ-9ge" secondAttribute="bottom" constant="45" id="4CK-hu-uBc"/>
+                                    <constraint firstItem="1BT-av-ASw" firstAttribute="leading" secondItem="jL0-ca-6lr" secondAttribute="leading" constant="30" id="KnS-58-WU2"/>
+                                    <constraint firstAttribute="trailing" secondItem="hH4-QQ-9ge" secondAttribute="trailing" constant="39" id="QPM-YQ-iid"/>
+                                    <constraint firstItem="1BT-av-ASw" firstAttribute="centerY" secondItem="hH4-QQ-9ge" secondAttribute="centerY" id="ycB-Z7-INx"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4xZ-o6-CLz">
+                                <rect key="frame" x="0.0" y="500" width="414" height="266"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aGQ-5Z-JYb">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jL0-ca-6lr" firstAttribute="top" secondItem="4xZ-o6-CLz" secondAttribute="bottom" id="0aW-Av-vGv"/>
+                            <constraint firstAttribute="bottom" secondItem="jL0-ca-6lr" secondAttribute="bottom" id="4Hw-n9-bTV"/>
+                            <constraint firstItem="4xZ-o6-CLz" firstAttribute="top" secondItem="pSX-K6-8w8" secondAttribute="bottom" id="F7l-Sv-VWk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pSX-K6-8w8" secondAttribute="trailing" id="TZm-Xd-g66"/>
+                            <constraint firstItem="pSX-K6-8w8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UKJ-Wl-ibd"/>
+                            <constraint firstItem="pSX-K6-8w8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="YMu-DG-1Kw"/>
+                            <constraint firstItem="jL0-ca-6lr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bOG-7e-Bog"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jL0-ca-6lr" secondAttribute="trailing" id="mxv-Q8-tDh"/>
+                            <constraint firstItem="4xZ-o6-CLz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nQ7-6V-4ve"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4xZ-o6-CLz" secondAttribute="trailing" id="xvg-vf-HBG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="4xZ-o6-CLz" id="7Lz-0S-dmc"/>
+                        <outlet property="imageView" destination="pSX-K6-8w8" id="Zja-pG-mEL"/>
+                        <outlet property="imageViewHeight" destination="eMg-o1-ceP" id="Rql-GR-7ta"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8.6956521739130448" y="3.3482142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="375" height="614"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
